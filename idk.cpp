@@ -1,18 +1,18 @@
 ﻿#include <iostream>
 
-// Выделение памяти
+// Выделение мемори
 int* allocateArray(int size) {
     return new int[size];
 }
 
-// Инициализация массива
+// Инициализация
 void initArray(int* arr, int size) {
     for (int i = 0; i < size; i++) {
         arr[i] = i + 1;
     }
 }
 
-// Печать массива
+// Печать
 void printArray(int* arr, int size) {
     for (int i = 0; i < size; i++) {
         std::cout << arr[i] << " ";
@@ -20,13 +20,13 @@ void printArray(int* arr, int size) {
     std::cout << std::endl;
 }
 
-// Удаление массива
+// Удаление
 void deleteArray(int*& arr) {
     delete[] arr;
     arr = nullptr;
 }
 
-// Пример использования
+
 int main() {
     int size = 5;
 
